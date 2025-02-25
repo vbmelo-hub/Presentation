@@ -1,154 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation</title>
     <style>
-        @font-face {
-            font-family: consola;
-            src: url(fonts/CONSOLA.TTF) format('TTF'),
-                 url(fonts/CONSOLAB.TTF) format('TTF'),
-                 url(fonts/consolai.ttf) format('TTF'),
-                 url(fonts/Consolas.ttf) format('TTF'),
-                 url(fonts/consolaz.ttf) format('TTF');
-        }
-        body {
-            background-color: #292828;
-            color: white;
-        }
+      @font-face {
+        font-family: consola;
+        src: url(fonts/CONSOLA.TTF) format("TTF"),
+          url(fonts/CONSOLAB.TTF) format("TTF"),
+          url(fonts/consolai.ttf) format("TTF"),
+          url(fonts/Consolas.ttf) format("TTF"),
+          url(fonts/consolaz.ttf) format("TTF");
+      }
+      body {
+        background-color: #292828;
+        color: white;
+      }
 
-        main {
-            margin: auto;
-            max-width: 492px;
-            font-family: Consolas, "Courier New", monospace;
-            line-height: 24px;
-        }
+      main {
+        margin: auto;
+        max-width: 492px;
+        font-family: Consolas, "Courier New", monospace;
+        line-height: 24px;
+      }
 
-        h1 {
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 0px;
-            font-weight: normal;
-        }
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: normal;
+      }
 
-        h3 {
-            font-size: 16px;
-            font-weight: normal;
-            margin-bottom: 40px;
-        }
+      h3 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 40px;
+      }
 
-        p {
-            text-align: center;
-        }
+      p {
+        text-align: center;
+      }
 
-        sub {
-            text-align: center;
-        }
+      sub {
+        text-align: center;
+      }
 
-        .cmdHead {
-            width: 100%;
-            height: auto;
-            font-size: 16px;
-            background-color: black;
-            color: #A179DC;
-            padding-bottom: 3px;
-        }
+      #lista {
+        text-align: left;
+        margin: 0px;
+        font-size: 11px;
+        line-height: 37px;
+      }
 
-        .cmdHead span {
-            margin: 5px;
-        }
+      #lista ul {
+        margin: 0px;
+      }
+      .linha-curta {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 20%);
+        vertical-align: middle;
+      }
 
-        .cmdBody {
-            display: flex;
-            width: 100%;
-            height: 94px;
-            background-color: #0C0C0C;
-            color: white;
-            margin-top: 0px;
-            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
-        }
+      .cmdHead {
+        display: flex;
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        background-color: black;
+        color: #a179dc;
+        padding-bottom: 3px;
+      }
 
-        .cmdBody p {
-            margin: 3px;
-            width: 472px;
-            font-size: 12px;
-            text-align: left;
-            padding-left: 4px;
-        }
+      .cmdHead span {
+        margin: 5px;
+      }
 
-        .titulos {
-            text-align: center;
-            color: white;
-            margin-bottom: 10px;
-            font-size: 20px;
-            font-weight: bold;
-        }
+      .cmdBody {
+        display: flex;
+        width: 100%;
+        height: 94px;
+        background-color: #0c0c0c;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
+      }
 
-        p#paragrafoEspecial {
-            font-size: 14px;
-            text-align: left;
-            margin-bottom: 50px;
-        }
+      .cmdBody p {
+        margin: 3px;
+        width: 472px;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 4px;
+      }
 
-        p#subtitle {
-            font-style: italic;
-            color: rgba(255, 255, 255, 0.432);
-            margin: 0px;
-            font-size: 16px;
-        }
+      #cmdBody {
+        display: flex;
+        width: 100%;
+        height: 327px;
+        background-color: #0c0c0c;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
+      }
 
-        span#forte {
-            font-weight: bold;
-            color: #4AAC62;
-        }
+      .titulos {
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-        .scroll {
-            display: block;
-            width: 14px;
-            height: 94px;
-            background-color: #D9D9D9;
-        }
+      p#paragrafoEspecial {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 50px;
+        text-align: justify;
+      }
 
-        .rolling {
-            display: flex;
-            width: 12px;
-            height: 18px;
-            background-color: #CDCDCD;
-            margin: auto;
-        }
+      p#subtitle {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.432);
+        margin: 0px;
+        font-size: 16px;
+      }
 
-        div#foto {
-            background-color: white;
-            width: 119px;
-            height: 119px;
-            border-radius: 100%;
-            margin: auto;
-        }
+      p#cmdescotismo {
+        margin: 0px 10px;
+        padding-top: 3px;
+        text-align: left;
+        font-size: 11px;
+      }
+
+      span#forte {
+        font-weight: bold;
+        color: #4aac62;
+      }
+
+      .scroll {
+        display: block;
+        width: 14px;
+        height: 94px;
+        background-color: #d9d9d9;
+      }
+
+      .rolling {
+        display: flex;
+        width: 12px;
+        height: 18px;
+        background-color: #cdcdcd;
+        margin: auto;
+      }
+
+      div#foto {
+        background-color: white;
+        width: 119px;
+        height: 119px;
+        border-radius: 100%;
+        margin: auto;
+      }
+
+      .cmdicon {
+        width: 24px;
+        height: 24px;
+        margin: 5px 5px;
+      }
+
+      /* LETRAS COLORIDAS DAS COMPETENCIAS */
+
+      #htm {
+        color: #E44D26;
+      }
+
+      #l5 {
+        color: #F16529;
+      }
+
+      #cs {
+        color: #012FD2;
+      }
+
+      #c3 {
+        color: #2465F1;
+      }
+
+      #pyt {
+        color: #3675A5;
+      }
+
+      #hon {
+        color: #FFE058;
+      }
+
+      #c {
+        color: #A179DC;
+      }
+
+      #sql {
+        color: #DB7533;
+      }
+
+      #f {
+        color: #FF3737;
+      }
+
+      #i {
+        color: #FE7235;
+      }
+
+      #g {
+        color: #8950FF;
+      }
+
+      #m {
+        color: #01B5FF;
+      }
+
+      #a {
+        color: #23CC71;
+      }
+
+      #rob {
+        color: #4AAC62;
+      }
+
+      #auto {
+        color: #C83544;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="Sobremim">
-            <div id="foto"></div>
-            <h1>Vinícius Barros de Melo</h1>
-            <p id="subtitle">"Desenvolvedor Web e Escoteiro"</p>
+      <div id="Sobremim">
+        <div id="foto"></div>
+        <h1>Vinícius Barros de Melo</h1>
+        <p id="subtitle">"Desenvolvedor Web e Escoteiro"</p>
+      </div>
+      <h3>Olá! Meu nome é Vinícius e eu gosto de desenvolver sites.</h3>
+      <p id="paragrafoEspecial">
+        Tenho 20 anos, sou universitário de Sistemas para Internet no
+        <span id="forte">Instituto Federal do Acre</span> e Escoteiro no ramo
+        Pioneiro do Grupo Escoteiro Leôncio de Carvalho. Sou apaixonado por
+        tecnologia e quero começar a desenvolver meus próprios projetos!
+      </p>
+      <span class="linha-curta"></span>
+      <h2 class="titulos">Competências</h2>
+      <div class="cmdHead">
+        <img class="cmdicon" src="imagens/cmd.png" alt="">
+        <span>Habilidades, linguagens e Ferramentas</span>
+      </div>
+      <div class="cmdBody">
+        <p>
+          C:\Users\vinicius> <span id="htm">HTM</span><span id="l5">L5</span> | <span id="cs">CS</span><span id="s3">S3</span> | <span id="pyt">Pyt</span><span id="hon">hon</span> | <span id="c">C</span># | <span id="sql">SQL</span> | GitHub | <span id="f">F</span><span>I</span><span id="g">G</span><span id="m">M</span><span id="a">A</span> |
+          <span id="rob">Robótica</span> e <span id="auto">Automação</span>
+        </p>
+        <span class="scroll">
+          <span class="rolling"></span>
+        </span>
+      </div>
+      <span class="linha-curta"></span>
+      <h2 class="titulos">Experiências</h2>
+      <div class="cmdHead">
+        <img class="cmdicon" src="imagens/cmd.png" alt="">
+        <span>Escotismo</span>
+      </div>
+      <div id="cmdBody">
+        <div id="lista">
+            <p id="cmdescotismo">
+                C:\Users\vinicius>
+            </p>
+          <ul>
+            <li>
+                Coordenação de atividades, incluindo planejamento e execução.
+            </li>
+            <li>
+                Facilidade para trabalhar em equipe.
+            </li>
+            <li>
+                Gestão de Projetos – Planejamento e execução de eventos.
+            </li>
+            <li>
+                Resolução de Problemas – Adaptação e solução de desafios em ambientes.
+            </li>
+            <li>
+                Organização e Comunicação – Criação de estratégias para engajar membros e transmitir informações de forma clara.
+            </li>
+          </ul>
         </div>
-        <h3>Olá! Meu nome é Vinícius e eu gosto de desenvolver sites.</h3>
-        <p id="paragrafoEspecial">Tenho 20 anos, sou universitário de Sistemas para Internet no <span id="forte">Instituto Federal do Acre</span> e Escoteiro no ramo Pioneiro do Grupo Escoteiro Leôncio de Carvalho. Sou apaixonado por tecnologia e quero começar a desenvolver meus próprios projetos!</p>
-        <hr>
-        <h2 class="titulos">Competências</h2>
-        <div class="cmdHead">
-            <span>Habilidades, linguagens e Ferramentas</span>
-        </div>
-        <div class="cmdBody">
-            <p>C:\Users\vinicius> HTML5 | CSS3 | Python | C# | SQL | GitHub | FIGMA | Robótica e Automação</p><span class="scroll">
-                <span class="rolling"></span>
-            </span>
-        </div>
+        <span class="scroll">
+          <span class="rolling"></span>
+        </span>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
