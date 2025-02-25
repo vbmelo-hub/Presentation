@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <style>
+      @import "bootstrap-icons/font/bootstrap-icons.css";
       @font-face {
         font-family: consola;
         src: url(fonts/CONSOLA.TTF) format("TTF"),
@@ -55,7 +58,9 @@
 
       #lista ul {
         margin: 0px;
+        padding-left: 30px;
       }
+
       .linha-curta {
         display: inline-block;
         width: 100%;
@@ -91,6 +96,7 @@
 
       .cmdBody p {
         margin: 3px;
+        overflow: hidden;
         width: 472px;
         font-size: 12px;
         text-align: left;
@@ -99,6 +105,7 @@
 
       #cmdBody {
         display: flex;
+        overflow: hidden;
         width: 100%;
         height: 327px;
         background-color: #0c0c0c;
@@ -133,6 +140,7 @@
 
       p#cmdescotismo {
         margin: 0px 10px;
+        width: 100px;
         padding-top: 3px;
         text-align: left;
         font-size: 11px;
@@ -145,17 +153,22 @@
 
       .scroll {
         display: block;
-        width: 14px;
-        height: 94px;
+        min-width: 14px;
+        height: 100%;
         background-color: #d9d9d9;
       }
 
       .rolling {
         display: flex;
         width: 12px;
-        height: 18px;
-        background-color: #cdcdcd;
-        margin: auto;
+        height: 15px;
+        background-color: #bbbbbb;
+        margin: 1px;
+        border-radius: 3px;
+      }
+
+      .rolling:hover {
+        background-color: #999999;
       }
 
       div#foto {
