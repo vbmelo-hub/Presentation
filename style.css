@@ -1,0 +1,319 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+      @font-face {
+        font-family: consola;
+        src: url(fonts/CONSOLA.TTF) format("truetype"),
+          url(fonts/CONSOLAB.TTF) format("truetype"),
+          url(fonts/consolai.ttf) format("truetype"),
+          url(fonts/Consolas.ttf) format("truetype"),
+          url(fonts/consolaz.ttf) format("truetype");
+      }
+      body {
+        background-color: #292828;
+        color: white;
+      }
+
+      main {
+        margin: auto;
+        max-width: 492px;
+        font-family: Consolas, "Courier New", monospace;
+        line-height: 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: normal;
+      }
+
+      h3 {
+        font-size: 16px;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 40px;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      sub {
+        text-align: center;
+      }
+
+
+      .icons {
+        margin-left: auto; /* Empurra os ícones para a direita */
+        display: flex;
+        align-items: center; /* Alinha verticalmente os ícones */
+        margin-top: auto;
+      }
+      
+      .bi-app, .bi-x {
+        color: white;
+        margin-left: 20px; /* Espaço entre os ícones */
+      }
+      
+      .bi-x {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+
+      .bi-x:hover {
+        background-color: red;
+      }
+
+      .bi-app {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+
+      .bi-app:hover, .minimize:hover {
+        background-color: rgba(129, 129, 129, 0.747);
+      }
+
+      .minimize {
+        width: 10px;
+        height: 1px;
+        padding-right: 4px;
+        margin-left: 5px;
+        background-color: white;
+      }
+
+      #lista {
+        text-align: left;
+        margin: 0px;
+        font-size: 11px;
+        line-height: 37px;
+      }
+
+      #lista ul {
+        margin: 0px;
+        padding-left: 30px;
+      }
+
+      .linha-curta {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 20%);
+        vertical-align: middle;
+      }
+
+      .cmdHead {
+        display: flex;
+        width: 100%;
+        max-height: 20px;
+        font-size: 16px;
+        background-color: black;
+        color: #a179dc;
+        padding-bottom: 3px;
+        overflow: hidden;
+      }
+
+      .cmdBody {
+        display: flex;
+        width: 100%;
+        height: 94px;
+        background-color: #0c0c0c;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
+        overflow-y: scroll; /* Permite a rolagem vertical */
+        -webkit-overflow-scrolling: touch; /* Rolar suavemente no celular */
+      }
+
+      .cmdBody p {
+        margin: 3px;
+        overflow: hidden;
+        width: 472px;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 4px;
+        position: relative;
+      }
+
+      #cmdBody {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 327px;
+        background-color: #0c0c0c;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
+        overflow-y: scroll; /* Permite a rolagem vertical */
+        -webkit-overflow-scrolling: touch; /* Rolar suavemente no celular */
+      }
+
+      .titulos {
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      p#paragrafoEspecial {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 50px;
+        text-align: justify;
+      }
+
+      p#subtitle {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.432);
+        margin: 0px;
+        font-size: 16px;
+      }
+
+      p#cmdescotismo {
+        margin: 0px 10px;
+        width: 100px;
+        padding-top: 3px;
+        text-align: left;
+        font-size: 11px;
+      }
+
+      span#forte {
+        font-weight: bold;
+        color: #4aac62;
+      }
+
+      .scroll {
+        display: block;
+        min-width: 14px;
+        height: 100%;
+        background-color: #d9d9d9;
+      }
+
+      .rolling {
+        display: flex;
+        width: 12px;
+        height: 15px;
+        background-color: #bbbbbb;
+        margin: 1px;
+        border-radius: 3px;
+      }
+
+      .rolling:hover {
+        background-color: #999999;
+      }
+
+      div#foto {
+        background-color: white;
+        width: 119px;
+        height: 119px;
+        border-radius: 100%;
+        margin: auto;
+      }
+
+      .cmdicon {
+        width: 24px;
+        height: 24px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      p#IFMaker {
+        font-size: 11px;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 5px;
+      }
+
+      .underscore {
+        position: absolute;
+        width: 7px; /* A linha tem o mesmo comprimento do texto */
+        height: 3px;
+        margin-top: 13px;
+        background-color: white;
+        opacity: 0; /* Inicialmente invisível */
+        animation: blink 1s steps(1) infinite; /* Animação de piscamento */
+      }
+
+      #underscoreul{
+        position: absolute;
+        width: 7px; /* A linha tem o mesmo comprimento do texto */
+        height: 3px;
+        margin-top: 20px;
+        background-color: white;
+        opacity: 0; /* Inicialmente invisível */
+        animation: blink 1s steps(1) infinite; /* Animação de piscamento */
+      }
+      
+      @keyframes blink {
+        0%, 100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* LETRAS COLORIDAS DAS COMPETENCIAS */
+
+      #htm {
+        color: #E44D26;
+      }
+
+      #l5 {
+        color: #F16529;
+      }
+
+      #cs {
+        color: #012FD2;
+      }
+
+      #c3 {
+        color: #2465F1;
+      }
+
+      #pyt {
+        color: #3675A5;
+      }
+
+      #hon {
+        color: #FFE058;
+      }
+
+      #c {
+        color: #A179DC;
+      }
+
+      #sql {
+        color: #DB7533;
+      }
+
+      #f {
+        color: #FF3737;
+      }
+
+      #i {
+        color: #FE7235;
+      }
+
+      #g {
+        color: #8950FF;
+      }
+
+      #m {
+        color: #01B5FF;
+      }
+
+      #a {
+        color: #23CC71;
+      }
+
+      #rob {
+        color: #4AAC62;
+      }
+
+      #auto {
+        color: #C83544;
+      }

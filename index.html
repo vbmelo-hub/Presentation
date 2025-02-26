@@ -4,249 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-    <style>
-      @import "bootstrap-icons/font/bootstrap-icons.css";
-      @font-face {
-        font-family: consola;
-        src: url(fonts/CONSOLA.TTF) format("TTF"),
-          url(fonts/CONSOLAB.TTF) format("TTF"),
-          url(fonts/consolai.ttf) format("TTF"),
-          url(fonts/Consolas.ttf) format("TTF"),
-          url(fonts/consolaz.ttf) format("TTF");
-      }
-      body {
-        background-color: #292828;
-        color: white;
-      }
-
-      main {
-        margin: auto;
-        max-width: 492px;
-        font-family: Consolas, "Courier New", monospace;
-        line-height: 24px;
-      }
-
-      h1 {
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 0px;
-        font-weight: normal;
-      }
-
-      h3 {
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 40px;
-      }
-
-      p {
-        text-align: center;
-      }
-
-      sub {
-        text-align: center;
-      }
-
-      #lista {
-        text-align: left;
-        margin: 0px;
-        font-size: 11px;
-        line-height: 37px;
-      }
-
-      #lista ul {
-        margin: 0px;
-        padding-left: 30px;
-      }
-
-      .linha-curta {
-        display: inline-block;
-        width: 100%;
-        height: 1px;
-        background-color: rgba(255, 255, 255, 20%);
-        vertical-align: middle;
-      }
-
-      .cmdHead {
-        display: flex;
-        width: 100%;
-        height: auto;
-        font-size: 16px;
-        background-color: black;
-        color: #a179dc;
-        padding-bottom: 3px;
-      }
-
-      .cmdHead span {
-        margin: 5px;
-      }
-
-      .cmdBody {
-        display: flex;
-        width: 100%;
-        height: 94px;
-        background-color: #0c0c0c;
-        color: white;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
-      }
-
-      .cmdBody p {
-        margin: 3px;
-        overflow: hidden;
-        width: 472px;
-        font-size: 12px;
-        text-align: left;
-        padding-left: 4px;
-      }
-
-      #cmdBody {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        height: 327px;
-        background-color: #0c0c0c;
-        color: white;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.26);
-      }
-
-      .titulos {
-        text-align: center;
-        color: white;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      p#paragrafoEspecial {
-        font-size: 14px;
-        text-align: left;
-        margin-bottom: 50px;
-        text-align: justify;
-      }
-
-      p#subtitle {
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.432);
-        margin: 0px;
-        font-size: 16px;
-      }
-
-      p#cmdescotismo {
-        margin: 0px 10px;
-        width: 100px;
-        padding-top: 3px;
-        text-align: left;
-        font-size: 11px;
-      }
-
-      span#forte {
-        font-weight: bold;
-        color: #4aac62;
-      }
-
-      .scroll {
-        display: block;
-        min-width: 14px;
-        height: 100%;
-        background-color: #d9d9d9;
-      }
-
-      .rolling {
-        display: flex;
-        width: 12px;
-        height: 15px;
-        background-color: #bbbbbb;
-        margin: 1px;
-        border-radius: 3px;
-      }
-
-      .rolling:hover {
-        background-color: #999999;
-      }
-
-      div#foto {
-        background-color: white;
-        width: 119px;
-        height: 119px;
-        border-radius: 100%;
-        margin: auto;
-      }
-
-      .cmdicon {
-        width: 24px;
-        height: 24px;
-        margin: 5px 5px;
-      }
-
-      /* LETRAS COLORIDAS DAS COMPETENCIAS */
-
-      #htm {
-        color: #E44D26;
-      }
-
-      #l5 {
-        color: #F16529;
-      }
-
-      #cs {
-        color: #012FD2;
-      }
-
-      #c3 {
-        color: #2465F1;
-      }
-
-      #pyt {
-        color: #3675A5;
-      }
-
-      #hon {
-        color: #FFE058;
-      }
-
-      #c {
-        color: #A179DC;
-      }
-
-      #sql {
-        color: #DB7533;
-      }
-
-      #f {
-        color: #FF3737;
-      }
-
-      #i {
-        color: #FE7235;
-      }
-
-      #g {
-        color: #8950FF;
-      }
-
-      #m {
-        color: #01B5FF;
-      }
-
-      #a {
-        color: #23CC71;
-      }
-
-      #rob {
-        color: #4AAC62;
-      }
-
-      #auto {
-        color: #C83544;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -266,22 +25,19 @@
       <h2 class="titulos">Competências</h2>
       <div class="cmdHead">
         <img class="cmdicon" src="imagens/cmd.png" alt="">
-        <span>Habilidades, linguagens e Ferramentas</span>
+        <span>linguagens e Ferramentas</span> <div class="icons"> <i class="minimize"></i> <i class="bi bi-app"></i> <i class="bi bi-x"></i></div>
       </div>
       <div class="cmdBody">
         <p>
           C:\Users\vinicius> <span id="htm">HTM</span><span id="l5">L5</span> | <span id="cs">CS</span><span id="s3">S3</span> | <span id="pyt">Pyt</span><span id="hon">hon</span> | <span id="c">C</span># | <span id="sql">SQL</span> | GitHub | <span id="f">F</span><span>I</span><span id="g">G</span><span id="m">M</span><span id="a">A</span> |
-          <span id="rob">Robótica</span> e <span id="auto">Automação</span>
+          <span id="rob">Robótica</span> e <span id="auto">Automação</span><span class="underscore"></span>
         </p>
-        <span class="scroll">
-          <span class="rolling"></span>
-        </span>
       </div>
       <span class="linha-curta"></span>
       <h2 class="titulos">Experiências</h2>
       <div class="cmdHead">
         <img class="cmdicon" src="imagens/cmd.png" alt="">
-        <span>Escotismo</span>
+        <span>Escotismo</span> <div class="icons"> <i class="minimize"></i> <i class="bi bi-app"></i> <i class="bi bi-x"></i></div>
       </div>
       <div id="cmdBody">
         <div id="lista">
@@ -302,13 +58,22 @@
                 Resolução de Problemas – Adaptação e solução de desafios em ambientes.
             </li>
             <li>
-                Organização e Comunicação – Criação de estratégias para engajar membros e transmitir informações de forma clara.
+                Organização e Comunicação – Criação de estratégias para engajar membros e transmitir informações de forma clara. <span id="underscoreul"></span>
             </li>
           </ul>
         </div>
-        <span class="scroll">
-          <span class="rolling"></span>
-        </span>
+      </div>
+      <span class="linha-curta"></span>
+      <div class="cmdHead">
+        <img class="cmdicon" src="imagens/cmd.png" alt="">
+        <span>IFMaker</span> <div class="icons"> <i class="minimize"></i> <i class="bi bi-app"></i> <i class="bi bi-x"></i></div>
+      </div>
+      <div id="cmdBody">
+        <div>
+          <p id="IFMaker">
+                C:\Users\vinicius> Fui integrante, como estudante, do projeto de extensão IFMaker Robótica e Automação, uma iniciativa que visa promover a cultura 'maker' — o conceito de 'aprender fazendo' — entre estudantes e a comunidade local. O projeto tem como foco incentivar o desenvolvimento de habilidades práticas e criativas, possibilitando que os participantes experimentem e se aprofundem em novas tecnologias. Durante a participação, tivemos acesso a espaços modernos e equipados com recursos de última geração, como impressão 3D, robótica e realidade virtual, o que possibilitou a criação de projetos inovadores. Além disso, o projeto proporcionou uma imersão nas tecnologias da Indústria 4.0, dando aos participantes uma visão aprofundada sobre o impacto dessas ferramentas na sociedade e no mercado de trabalho. Ao longo da experiência, pude não apenas aprender novas técnicas, mas também colaborar em soluções criativas e tecnológicas que estimulam a inovação.<span class="underscore"></span>
+            </p>
+        </div>
       </div>
     </main>
     <footer></footer>
