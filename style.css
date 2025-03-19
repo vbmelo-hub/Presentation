@@ -219,8 +219,8 @@
         background-color: #999999;
       }
 
-      div#foto {
-        background-color: white;
+      #foto {
+        display: block;
         width: 119px;
         height: 119px;
         border-radius: 100%;
